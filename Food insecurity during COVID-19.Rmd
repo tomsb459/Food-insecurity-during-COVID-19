@@ -1,0 +1,35 @@
+---
+title: "Food insecurity during COVID-19 pandemic"
+author: "Tom Stanley-Becker"
+date: "11/28/2020"
+output: pdf_document
+---
+This analysis is a work-in-progress. It uses data from the US Census Bureau's Household Pulse Survey, Measuring Household Experiences during the Coronavirus Pandemic (conducted in three phases - from April 23 to November 9, 2020).
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+install.packages("tidyverse")
+install.packages("readxl")
+library(tidyverse)
+library(readxl)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r }
+Food_suffiiency<-read_excel("Food sufficiency .xlsx")
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
